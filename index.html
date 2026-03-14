@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 align="center"><u>Registration Form</u></h1>
+    <center>
+        <form action="./login.html">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter Name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email" name="email" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="password" name="password" required><br><br>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" placeholder="Confirm password" name="confirm-password" required><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" placeholder="Enter your phone number" name="phone" required><br><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="mgender" name="gender" value="male" required>
+            <label for="mgender">Male</label>
+            <input type="radio" id="fgender" name="gender" value="female" required>
+            <label for="fgender">Female</label><br><br>
+            <label for="education">Education Details:</label>
+            <input type="checkbox" id="10education" name="education" value="10th">
+            <label for="10education">10th</label>
+            <input type="checkbox" id="Intereducation" name="education" value="intermediate">
+            <label for="Intereducation">Intermediate</label>
+            <input type="checkbox" id="Btecheducation" name="education" value="B-tech">
+            <label for="Btecheducation">B-Tech</label><br><br>   
+            <label for="city">City: </label>&nbsp;&nbsp;
+            <select id="city" name="city" required>
+                <option value="">Select Your City</option>
+                <option value="Hyd">Hyderabad</option>
+                <option value="Vijayawada">Vijayawada</option>
+                <option value="Bengaluru">Bengaluru</option>
+                <option value="Other">Others</option>
+            </select><br><br>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
+            <br><br>
+            <input type="submit" value="Register">
+            <p>Already have an account? <a href="./login.html">Login Here</a></p>
+        </form>
+    </center>
+</body>
+
+</html>
