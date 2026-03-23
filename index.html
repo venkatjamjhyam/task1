@@ -5,49 +5,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-image: url(https://img.freepik.com/free-vector/user-verification-unauthorized-access-prevention-private-account-authentication-cyber-security-people-entering-login-password-safety-measures_335657-3530.jpg?semt=ais_hybrid&w=740&q=80);
+            background-size: 45%;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-attachment: fixed;
+            min-height: 100vh;
+            padding: 1px;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+            margin-left: 15%;
+            margin-top: 1%;
+        }
+
+        
+
+        .parent-container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 10px 30px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 480px;
+            margin-left: 10%;
+            box-shadow: 0 20px 60px rgba(205, 198, 198, 0.911);
+            border: 1px solid rgba(21, 19, 19, 0.904);
+            transition: all 0.3s ease;
+        }
+
+        /* .parent-container:hover {
+            box-shadow: 0 30px 80px rgba(102, 126, 234, 0.4);
+            
+        } */
+
+        label {
+            display: block;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 0.95em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            background-color: #f8f9ff;
+            /* outline: none; */
+        }
+
+        /* input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            background-color: white;
+            box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+            transform: translateY(-2px);
+        } */
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            margin-top: 10px;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: inline;
+            margin-right: 20px;
+            margin-top: 0;
+            text-transform: none;
+            letter-spacing: normal;
+            font-size: 0.9em;
+            font-weight: normal;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px 20px;
+            margin-top: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        /* input[type="submit"]:hover {
+            box-shadow: 0 15px 35px rgba(95, 209, 240, 0.4);
+        } */
+
+        /* input[type="submit"]:active {
+            transform: translateY(0);
+        } */
+
+        p {
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+
+        /* a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        } */
+
+        @media (max-width: 768px) {
+            .parent-container {
+                margin-left: 0;
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            .parent-container {
+                padding: 35px 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <h1 align="center"><u>Registration Form</u></h1>
-    <center>
-        <form action="./login.html">
+    <h1><u>Registration Form</u></h1>
+    <div>
+        <form action="./login.html" class="parent-container">
+            
             <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter Name" name="name" required><br><br>
+            <input type="text" id="name" placeholder="Enter Name" name="name" required>
+
             <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Enter Email" name="email" required><br><br>
+            <input type="email" id="email" placeholder="Enter Email" name="email" required>
+
             <label for="password">Password:</label>
-            <input type="password" id="password" placeholder="password" name="password" required><br><br>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required>
+
             <label for="confirm-password">Confirm Password:</label>
-            <input type="password" id="confirm-password" placeholder="Confirm password" name="confirm-password" required><br><br>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" name="confirm-password" required>
+
             <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" placeholder="Enter your phone number" name="phone" required><br><br>
-            <label for="gender">Gender:</label>
-            <input type="radio" id="mgender" name="gender" value="male" required>
-            <label for="mgender">Male</label>
-            <input type="radio" id="fgender" name="gender" value="female" required>
-            <label for="fgender">Female</label><br><br>
-            <label for="education">Education Details:</label>
-            <input type="checkbox" id="10education" name="education" value="10th">
-            <label for="10education">10th</label>
-            <input type="checkbox" id="Intereducation" name="education" value="intermediate">
-            <label for="Intereducation">Intermediate</label>
-            <input type="checkbox" id="Btecheducation" name="education" value="B-tech">
-            <label for="Btecheducation">B-Tech</label><br><br>   
-            <label for="city">City: </label>&nbsp;&nbsp;
+            <input type="text" id="phone" placeholder="Enter your phone number" name="phone" required>
+
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="mgender" name="gender" value="male" required>
+                <label for="mgender">Male</label>
+                <input type="radio" id="fgender" name="gender" value="female" required>
+                <label for="fgender">Female</label>
+            </div>
+
+            <label>Education Details:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="10education" name="education" value="10th">
+                <label for="10education">10th</label>
+                <input type="checkbox" id="Intereducation" name="education" value="intermediate">
+                <label for="Intereducation">Intermediate</label>
+                <input type="checkbox" id="Btecheducation" name="education" value="B-tech">
+                <label for="Btecheducation">B-Tech</label>
+            </div>
+
+            <label for="city">City:</label>
             <select id="city" name="city" required>
                 <option value="">Select Your City</option>
                 <option value="Hyd">Hyderabad</option>
                 <option value="Vijayawada">Vijayawada</option>
                 <option value="Bengaluru">Bengaluru</option>
                 <option value="Other">Others</option>
-            </select><br><br>
+            </select>
+
             <label for="address">Address:</label>
             <textarea id="address" name="address" placeholder="Enter your address" required></textarea>
-            <br><br>
+
             <input type="submit" value="Register">
             <p>Already have an account? <a href="./login.html">Login Here</a></p>
+        
         </form>
-    </center>
+    </div>
 </body>
 
 </html>

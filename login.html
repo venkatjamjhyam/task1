@@ -4,19 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-image:url(https://cdni.iconscout.com/illustration/premium/thumb/user-login-illustration-svg-download-png-3420355.png);
+            background-size: 37%;
+            background-repeat: no-repeat;
+            padding: auto;
+            background-position: right;
+            background-attachment: fixed;
+        }
+        .parent{
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 10px 30px;
+            border-radius: 20px;
+            width: 30%;
+            max-width: 480px;
+            margin: 30px 0px 0px 100px;
+            box-shadow: 0 20px 60px rgba(205, 198, 198, 0.911);
+            border: 1px solid rgba(21, 19, 19, 0.904);
+            transition: all 0.3s ease;
+        }
+        h1 {
+            color: rgb(0, 0, 0);
+            margin: 50px 0px 0px 200px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 4px;
+            color: #333;
+            font-weight: 600;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .parent input[type="email"],
+        .parent input[type="password"]{
+            width: 90%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            background-color: #f8f9ff;
+            margin: 10px 0px 0px 0px;
+            /* outline: none; */
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 14px 20px;
+            margin-top: 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        
+
+    </style>
 </head>
 <body>
-    <form action="./small task1.html">
-        <center>
-        <h1><u>Login Form</u></h1>
-        <label for="Email">Email:</label>&nbsp;&nbsp;
-        <input type="email" id="Email" placeholder="Enter Your Email" name="Email" required><br><br>
-        <label for="Password">Password:</label>
-        <input type="password" id="Password" placeholder="Enter Your Password" name="Password" required><br><br>
-        <input type="submit" value="Login">
-        <p>Don't have an account? <a href="./index.html">Register Here</a></p><br>
+    <h1><u>Login Form</u></h1>
+    <div>
+    <form action="./small task1.html" class="parent">
         
-        </center>
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" placeholder="Enter Your Email" name="Email" required>
+
+        <label for="Password">Password:</label>
+        <input type="password" id="Password" placeholder="Enter Your Password" name="Password" required>
+
+        <input type="submit" value="Login">
+        <p style="text-align: center; margin-top: 20px;">Don't have an account? <a href="./index.html" style="color: #667eea;">Register Here</a></p><br>
+        
     </form>
+    </div>
 </body>
 </html>
